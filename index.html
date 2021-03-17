@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Responsive PortFolio</title>
+	<link rel="stylesheet" href="style_me.css">
+	<script src="ext_me.js" language="javascript"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<!--Creating the Tabs and Logos at top using HTML-->
+	<header>
+		<a href="#" class="logo">Portfolio</a>
+		<div class="toggle" onclick="toggleMenu();"></div>
+		<ul class="menu">
+			<li><a href="#home" onclick="toggleMenu();">Home</a></li>
+			<li><a href="#about" onclick="toggleMenu();">About</a></li>
+			<li><a href="#Services" onclick="toggleMenu();">Services</a></li>
+			<li><a href="#Work" onclick="toggleMenu();">Work</a></li>
+			<li><a href="#skills" onclick="toggleMenu();">Skills </a></li>
+			<li><a href="#blog" onclick="toggleMenu();">blog </a></li>
+			<li><a href="#Contact" onclick="toggleMenu();">Contact</a></li>
+		</ul>
+	</header>
+	<!--Creating Banner Layout in HTML-->
+	<section class="banner" id="home">
+		<div class="textBx">
+			<h2><span>V</span>inita<span> P</span>al<span></h2>
+			<h3>Hi, Welcome To My Personal Website.</h3>
+			<h3>Front-end Developer | Content Writer | Learner | Student</h3>
+			<a href="#about" class="btn">About Me</a>
+		</div>
+	</section>
+	<!--Creating About me Layout in HTML-->
+	<section class="about" id="about">
+		<div class="heading">
+			
+			<h2>About Me</h2>
+		</div>
+		<div class="content">
+			<div class="w50">
+				<img src="images/IMG_20200126_092130.jpg" alt="" class="proPic">
+			</div>
+			<div class="contentBx w50">
+				<h3>Who am i?</h3>
+				<h2>I'm <b>Vinita Pal</b>, a Web Developer</h2>
+				<p>I'm 3rd Year B.E. student and keen explorer of knowledge. </p>
+				<p>based in Jaipur Rajasthan ,India.The young code advocate holds a number of tech skills such as , Front-end Web Developer, Basic Knowledge of Networking and Cyberssecurity.</p>
+       	  	  	<p>With a great passion for technology and the Fourth Industrial Revolution, I have invested my time, energy and efforts in becoming a better version of my self.</p>
+				<div class="heading bottom">
+					<a href="file:///C:/Users/user/Desktop/My_project/PORTFOLIO/public/vinita.resume[600].pdf" class="btn round">Download CV</a>
+					<div class="bt">
+						<b>Name:  </b>  Vinita Pal<br>
+						<b>Age:  </b>  20
+					</div>
+					<div class="bt">
+						<b>Email:</b> pvinitak001@gmail.com<br>
+						<b>Location:</b> INDIA
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Creating a Service layout-->
+	<section class="services" id="services">
+		<div class="heading white">
+			<h2>Courses</h2>
+			<!-- <p>Internship i had done</p> -->
+		</div>
+		<div class="content">
+			
+			<div class="servicesBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates/Vinitapal-Introduction%20to%20-certificate.pdf" target="null" download>
+				<i class="fa fa-cybersecurity fa-4x"></i>
+				<h3>Cisco Cybersecurity</h3>
+				
+			</div>
+			<div class="servicesBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates\1598548750594_894494766.jpg" target="null" download>
+				<i class="fa fa-ML fa-4x"></i>
+				<h3>Verzeo Machine Learning</h3>
+			</div>
+			<div class="servicesBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates\NQT(TCS).pdf" target="null" download>
+				<i class="fa fa-NQT fa-4x"></i>
+				<h3>National Qualifier Test(2020)</h3>
+				<!-- <p>It was a promotional intership which focuses on the advertisement of a product.</p> -->
+			</div>
+			<div class="servicesBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates/Vinitapal-CCNAv7%20Introduct-certificate.pdf" target="null" download>
+				<i class="fa fa-networking fa-4x"></i>
+				<h3>Cisco Networking</h3>
+			</div>
+			<div class="servicesBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates\Coursera python_game.pdf" target="null" download>
+				<i class="fa fa-game fa-4x"></i>
+				<h3>Game using Python</h3>
+			</div>
+			<div class="servicesBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates\DSC_WOW_CERTIFICATE.png.pdf" target="null" download>
+				<i class="fa fa-COD fa-4x"></i>
+				<h3>Code of Duty(DSC WOW) </h3>
+			</div>
+
+
+		</div>
+	</section>
+	<!--Creating a Work Layout-->
+	<section class="work" id="work">
+		<div class="heading">
+			<h2>Education</h2>
+			<p>Schooling/Degree</p>
+		</div>
+		<div class="content">
+			
+			<div class="workBx">
+				<a href="https://www.adityabirlaschools.com/" target="_blank">
+					<img src="images/abps.jpg" alt="">
+					<p>The Aditya Birla Public School</p>
+				</a>
+			</div>
+			<div class="workBx">
+				<a href="https://sstc.ac.in/" target="_blank">
+					<img src="images/sstc.jpg" alt="">
+					<p>Shri Shankaracharya Institute of Tech.</p>
+				</a>
+			</div>
+			
+		</div>
+	</section>
+	<!--Creating skills Layout-->
+	<section class="skills" id="skills">
+		<div class="heading_white">
+			<h2>Soft Skills and Languages</h2>
+			
+		</div>
+		<div class="content">
+			<div class="skillsBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates\HTML&CSS.png" target="null" download>
+				<h3>HTML & CSS</h3>	</a>
+			</div>
+			<div class="skillsBx">
+				<a href="C:\Users\user\Desktop\My_project\certificates\JavaScript_certificate.jpg" target="null" download>
+				<h3>JAVASCRIPT</h3>	</a>
+			</div>
+			<div class="skillsBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates/python%20Coursera.pdf" target="null" download>
+				<h3>PYTHON</h3></a>	
+			</div>
+			<div class="skillsBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates\Programming in C++.jpg" target="null" download>
+				<h3>C++</h3></a>	
+			</div>
+			<div class="skillsBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates/data%20structure.1.pdf" target="null" download>
+				<h3>Data Structure</h3>	</a>
+			</div>
+			<div class="skillsBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates\UDEMY-EH.jpg" target="null" download>
+				<h3>Ethical Hacking</h3>
+				</a>	
+			</div>
+			<div class="skillsBx">
+				<a href="file:///C:/Users/user/Desktop/My_project/certificates/MicrosoftCertificate.pdf" target="null" download>
+				<h3>Microsoft AI Classroom Series</h3>
+				</a>	
+			</div>
+		</div>
+	</section>
+	<!-- start Blog -->
+	 <section class="blog" id="blog">
+   	 <div class="container">
+   	 	   <h2 class="title">Blog</h2>
+   	 	   <div class="blog-content">
+   	 	   	  <div class="card">
+   	 	   	  	  <div class="box">
+   	 	   	  	  	  <img  src="images/images.png" />
+   	 	   	  	  	  <h4>January, 2021 </h4>
+   	 	   	  	  	  <h3>What is HTML 5?</h3>
+   	 	   	  	  	  <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web,
+					  it is the code that describes web pages whose acronym stands for Hyper Text Markup Language.</p>
+   	 	   	  	  	 
+   	 	   	  	  </div>
+   	 	   	  </div>
+   	 	   	  <div class="card">
+   	 	   	  	  <div class="box">
+   	 	   	  	  	  <img  src="images/download.png"/>
+   	 	   	  	  	  <h4>January, 2021 </h4>
+   	 	   	  	  	  <h3>What is CSS 3?</h3>
+   	 	   	  	  	  <p>Cascading Style Sheets (CSS) is a language that is used to style and organize the layout of Web pages.
+					  CSS3 allows developers to style HTML elements
+					  easier.</p>
+   	 	   	  	  	 
+   	 	   	  	  </div>
+   	 	   	  </div>
+   	 	   	  <div class="card">
+   	 	   	  	  <div class="box">
+   	 	   	  	  	  <img  src="images/true-agency-o4UhdLv5jbQ-unsplash.jpg"/>
+   	 	   	  	  	  <h4>January, 2021</h4>
+   	 	   	  	  	  <h3>What is Web Development?</h3>
+   	 	   	  	  	  <p>Web development is the building and maintenance of websites; it's the work that happens behind the scenes to
+					  make a website look great, work fast and perform well with a seamless user experience</p>
+   	 	   	  	  	 
+   	 	   	  	  </div>
+   	 	   	  </div>
+   	 	   </div>
+		   
+		   <br/>
+		   <br/>
+		    <div class="centers portfolio-content">
+			  <a href="blog.html" target="null">
+			  <br/>
+		   <br/>
+					  <p><button type="button" class="btn-bg">Continue to read blog posts</button></p>
+					  </a>
+                  	  </div>
+   	 </div>
+	 
+	</section>
+
+  
+ 
+ <!-- Start Footer -->
+ <section class="contact" id="contact">
+   <footer>
+   	  <div class="container">
+   	  	  <div class="footer-content">
+   	  	  	  <div class="box">
+   	  	  	  	  <div class="icon">
+   	  	  	  	  	 <span class="fa fa-envelope"></span>
+   	  	  	  	  </div>
+   	  	  	  	  <h4>E-mail</h4>
+   	  	  	  	  <p>pvinitak001@gmail.com</p>
+   	  	  	  </div>
+   	  	  	  <div class="box">
+   	  	  	  	  <div class="icon">
+   	  	  	  	  	 <span class="fa fa-map-marker"></span>
+   	  	  	  	  </div>
+   	  	  	  	  <h4>Location</h4>
+   	  	  	  	  <p>Jaipur, India</p>
+   	  	  	  </div>
+   	  	  </div>
+   	  	  <div class="social-links">
+   	  	  	 <ul>
+   	  	  	 	 <li><a href="https://www.linkedin.com/in/vinita-p-6951ab191/" target="null" ><span class="fa fa-linkedin"></span></a></li>
+   	  	  	 	 <li><a href="https://twitter.com/glitch_vip" target="null"><span class="fa fa-twitter" ></span></a></li>
+   	  	  	 	 <li><a href="https://www.instagram.com/vinita_012/" target="null"><span class="fa fa-instagram"></span></a></li>
+				 <li><a href="https://github.com/Dis-ease-20" target="null"><span class="fa fa-github"></span></a></li>
+				
+				 
+   	  	  	 </ul>
+   	  	  </div>
+   	  </div>
+   </footer>
+   </section>
+ <!-- End Footer -->
+
+	
+</body>
+</html>
+
+					
+
+
+
+
+
+
+
+
+
